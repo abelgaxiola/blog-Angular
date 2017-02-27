@@ -7,24 +7,24 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/throw';
 
-import { Post } from './post';
+import { Blog } from './blog';
 
 @Injectable()
-export class PostsService {
-  private postsUrl = './app/posts/posts.json';
+export class BlogService {
+  private blogsUrl = './app/blog/blogs.json';
 
   constructor(private http: Http) { }
 
-  getAnimals(): Observable<Post[]> {
-    return this.http.get(this.postsUrl)
-      .map((response: Response) => <Post[]>response.json())
+  getBlogs(): Observable<Blog[]> {
+    return this.http.get(this.blogsUrl)
+      .map((response: Response) => <Blog[]>response.json())
       .do(data => console.log('All: ' + JSON.stringify(data)))
       .catch(this.handleError);
   }
 
-    getAnimal(id: number): Observable<Post> {
-        return this.getAnimals()
-            .map((posts: Post[]) => posts.find(p => p.Id === id));
+    getBlog(id: number): Observable<Blog> {
+        return this.getBlogs()
+            .map((blogs: Blog[]) => blogs.find(p => p.Id === id));
     }
 
   private handleError(error: Response) {

@@ -1,0 +1,34 @@
+<div class='panel panel-primary'>
+  <div class='panel-heading'>
+    {{pageTitle}}
+  </div>
+
+  <div class='panel-body'>
+    <div>
+      <table class='table table-responsive table-hover'>
+        <thead>
+          <tr>
+            <th>Picture</th>
+            <th>Title</th>
+            <th>Summary</th>
+            <th>Post</th>
+            <th>Type</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody class="text-primary">
+          <tr *ngFor='let blog of blogs' [routerLink]="['/blog', blog.Id]" style='cursor:pointer'>
+            <td>
+              <img [src]='blog.ImageURL' [title]='blog.Title | uppercase' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
+            </td>
+            <td>{{blog.Title}}</td>
+            <td>{{ blog.Summary }}</td>
+            <td>{{ blog.Post }}</td>
+            <td>{{ blog.Type }}</td>
+            <td>{{ blog.Date | date}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

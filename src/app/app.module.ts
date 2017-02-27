@@ -1,26 +1,26 @@
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { AppComponent }  from './app.component';
-import { PostsComponent } from './posts/posts.component';
-import { PostsModule } from './posts/posts.module';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { BlogModule } from './blog/blog.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot([
-      { path: 'posts', component: PostsComponent },
-      { path: '', redirectTo: 'posts', pathMatch: 'full' },
-      { path: '**', redirectTo: 'posts', pathMatch: 'full' }
+      { path: 'home', component: HomeComponent },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: '**', redirectTo: 'home', pathMatch: 'full' }
     ]),
-    PostsModule
+    BlogModule
   ],
   declarations: [
     AppComponent,
-    PostsComponent
+    HomeComponent
   ],
   bootstrap: [AppComponent]
 })

@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'blog-app',
-  templateUrl: './app/app.component.html'
+  template: '<router-outlet></router-outlet>'
 })
 
-export class AppComponent  { date = new Date().getFullYear(); }
+export class AppComponent {
+  pageTitle = 'Thoughts Expressed';
+}
