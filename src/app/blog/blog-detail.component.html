@@ -1,4 +1,5 @@
 <div *ngIf='blog'>
+
     <div class="demo-blog demo-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
       <main class="mdl-layout__content">
         <div class="demo-back">
@@ -7,7 +8,7 @@
           </a>
         </div>
         <div class="demo-blog__posts mdl-grid">
-          
+
           <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
             <div class="mdl-card__media mdl-color-text--grey-50">
               <h3>{{blog.Title}}</h3>
@@ -26,20 +27,21 @@
           </div>
 
           <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-            <a href="index.html" class="demo-nav__button">
+            <a [routerLink]="['home']" class="demo-nav__button">
               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
               </button>
               Newer
             </a>
             <div class="section-spacer"></div>
-            <a href="index.html" class="demo-nav__button">
+            <a [routerLink]="['home']" class="demo-nav__button">
               Older
               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_forward</i>
               </button>
             </a>
           </nav>
+
         </div>
       </main>
       <div class="mdl-layout__obfuscator"></div>
