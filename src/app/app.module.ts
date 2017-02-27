@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { BlogComponent } from './blog/blog.component';
 import { BlogModule } from './blog/blog.module';
 
 @NgModule({
@@ -12,15 +12,15 @@ import { BlogModule } from './blog/blog.module';
     BrowserModule,
     HttpModule,
     RouterModule.forRoot([
-      { path: 'home', component: HomeComponent },
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: '**', redirectTo: 'home', pathMatch: 'full' }
+      { path: 'blog', component: BlogComponent },
+      { path: '', redirectTo: 'blog', pathMatch: 'full' },
+      { path: '**', redirectTo: 'blog', pathMatch: 'full' }
     ]),
     BlogModule
   ],
   declarations: [
     AppComponent,
-    HomeComponent
+    BlogComponent
   ],
   bootstrap: [AppComponent]
 })

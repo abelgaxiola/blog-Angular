@@ -1,0 +1,30 @@
+<div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+  <main class="mdl-layout__content">
+    <div class="demo-blog__posts mdl-grid">
+<div *ngFor='let blog of blogs' [routerLink]="['/blog', blog.Id]">
+<div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div [style.background-image]="'url(' + blog.ImageURL + ')'" class="mdl-card__media mdl-color-text--grey-50">
+    <h3>{{ blog.Title }}</h3>
+  </div>
+  <div class="mdl-color-text--grey-600 mdl-card__supporting-text">{{ blog.Summary }}</div>
+  <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+    <div class="minilogo"></div>
+    <div>
+      <strong>{{ blog.Type }}</strong>
+      <span>{{ blog.Date | date }}</span>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+    <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer--left-section">
+        <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+              <span class="visuallyhidden">Twitter</span>
+            </button>
+      </div>
+    </footer>
+  </main>
+  <div class="mdl-layout__obfuscator"></div>
+</div>
+

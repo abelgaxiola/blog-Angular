@@ -3,9 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule} from '@angular/router';
 
-import { BlogListComponent } from './blog-list.component';
-import { BlogDetailComponent } from './blog-detail.component';
-
+import { BlogListComponent } from './../blog-list/blog-list.component';
+import { BlogDetailComponent } from './../blog-detail/blog-detail.component';
 import { BlogService } from './blog.service';
 
 @NgModule({
@@ -13,7 +12,7 @@ import { BlogService } from './blog.service';
     CommonModule,
     FormsModule,
     RouterModule.forChild([
-      { path: 'blog', component: BlogListComponent },
+      { path: 'blogs', component: BlogListComponent },
       { path: 'blog/:id', component: BlogDetailComponent}
     ])
   ],

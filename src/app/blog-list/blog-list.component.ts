@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Blog } from './blog';
-import { BlogService } from './blog.service';
+import { Blog } from './../blog/blog';
+import { BlogService } from './../blog/blog.service';
 
 @Component({
-  templateUrl: 'app/blog/blog-list.component.html'
+  templateUrl: 'app/blog-list/blog-list.component.html'
 })
 
 export class BlogListComponent implements OnInit {
-  pageTitle = 'Blogs List';
-  imageWidth: number = 50;
-  imageMargin: number = 2;
+  pageTitle = 'Blog List';
   errorMessage: string;
   blogs: Blog[];
 

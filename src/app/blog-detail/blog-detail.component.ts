@@ -3,11 +3,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 import { Subscription } from 'rxjs/Subscription';
 
-import { Blog } from './blog';
-import { BlogService } from './blog.service';
+import { Blog } from './../blog/blog';
+import { BlogService } from './../blog/blog.service';
 
 @Component({
-    templateUrl: 'app/blog/blog-detail.component.html'
+    templateUrl: 'app/blog-detail/blog-detail.component.html'
 })
 
 export class BlogDetailComponent implements OnInit {
