@@ -1,6 +1,6 @@
 <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
   <main class="mdl-layout__content">
-    <div *ngFor='let blog of blogs' [routerLink]="['/blog', blog.Id]">
+    <div *ngFor='let blog of blogs | slice:0:3' [routerLink]="['/blog', blog.Id]">
       <div class="demo-blog__posts mdl-grid">
         <div class="mdl-card coffee-pic mdl-cell mdl-cell--12-col">
           <div [style.background-image]="'url(' + blog.ImageURL + ')'" class="mdl-card__media mdl-color-text--grey-50">
@@ -17,15 +17,6 @@
         </div>
       </div>
     </div>
-    <nav class="demo-nav mdl-cell mdl-cell--12-col">
-      <div class="section-spacer"></div>
-      <a [routerLink]="['/blogs']" class="demo-nav__button" title="show more">
-              More
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">arrow_forward</i>
-              </button>
-            </a>
-    </nav>
     <footer class="mdl-mini-footer">
       <div class="mdl-mini-footer--left-section">
         <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
@@ -36,4 +27,3 @@
   </main>
   <div class="mdl-layout__obfuscator"></div>
 </div>
-<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>

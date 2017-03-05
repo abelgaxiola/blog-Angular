@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import { BlogListComponent } from './../blog-list/blog-list.component';
 import { BlogDetailComponent } from './../blog-detail/blog-detail.component';
@@ -13,7 +13,7 @@ import { BlogService } from './blog.service';
     FormsModule,
     RouterModule.forChild([
       { path: 'blogs', component: BlogListComponent },
-      { path: 'blog/:id', component: BlogDetailComponent}
+      { path: 'blog/:id', component: BlogDetailComponent }
     ])
   ],
   declarations: [
@@ -25,4 +25,4 @@ import { BlogService } from './blog.service';
   ]
 })
 
-export class BlogModule {}
+export class BlogModule { }
