@@ -1,6 +1,6 @@
-<div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+<div class="blog mdl-layout mdl-js-layout has-drawer is-upgraded">
   <main class="mdl-layout__content">
-    <div class="demo-blog__posts mdl-grid">
+    <div class="blog__posts mdl-grid">
       <div *ngFor='let blog of blogs | slice:3' [routerLink]="['/blog', blog.Id]">
         <div class="mdl-card mdl-cell mdl-cell--12-col">
           <div [style.background-image]="'url(' + blog.ImageURL + ')'" class="mdl-card__media mdl-color-text--grey-50">
@@ -17,13 +17,7 @@
         </div>
       </div>
     </div>
-    <footer class="mdl-mini-footer">
-      <div class="mdl-mini-footer--left-section">
-        <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
-              <span class="visuallyhidden">Twitter</span>
-            </button>
-      </div>
-    </footer>
+    <footer-app></footer-app>
   </main>
   <div class="mdl-layout__obfuscator"></div>
 </div>
