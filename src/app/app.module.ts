@@ -24,10 +24,6 @@ import { FooterComponent } from './footer/footer.component';
       { path: 'blog/:id', component: BlogDetailComponent },
       { path: '', redirectTo: 'blog', pathMatch: 'full' },
       { path: '**', redirectTo: 'blog', pathMatch: 'full' }
-    ]),
-    RouterModule.forChild([
-      { path: 'blogs', component: BlogListComponent },
-      { path: 'blog/:id', component: BlogDetailComponent }
     ])
   ],
   declarations: [
