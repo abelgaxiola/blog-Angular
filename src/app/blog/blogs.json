@@ -1,11 +1,11 @@
 [
   {
     "Id": 1,
-    "Title": "Web API and CORS",
-    "Summary": "Recently I added a Web API project to an existing Visual Studio MVC solution.  It all went pretty smooth and everything worked as expected all the way to deploying to the DEV webserver environment...",
+    "Title": "US Citizenship Test",
+    "Summary": "The U.S. Citizenship and Immigration Services provides us with 100 questions and answers that cover American Government, History, and Civics. The test is an oral test and the applicant will be asked 10 questions (taken from the 100 provided) from which at least 6 must be answered correctly in order to pass the test.",
     "Post": "<p>A few weeks ago I was visiting with a family member that is studying to take the US Citizenship test and decided to help by creating a web application that can be used to study online.  Since the application is hosted on the Internet anyone can practice the questions and answers by going to the <a href='http://SouthToNorth.com' target='_blank'>SouthToNorth.com</a> website using a computer, a tablet, or a phone.</p><p>The U.S. Citizenship and Immigration Services provides us with 100 questions and answers that cover American Government, History, and Civics. The test is an oral test and the applicant will be asked 10 questions (taken from the 100 provided) from which at least 6 must be answered correctly in order to pass the test.</p><p> Maybe you know someone that is studying to take the test; if so, then send her/him the website link. I can tell you that I took the test and failed in more than one answer.  Go ahead and see how much you “really” know about U.S. history and government. </p><p>Enjoy,</p>",
     "Type": "Personal",
-    "Date": "2013-04-23 05:16:12",
+    "Date": "February 9 2015",
     "ImageURL": "./images/coffee.jpg"
   },
   {
