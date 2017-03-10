@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Blog } from './../blog/blog';
 import { BlogService } from './../blog/blog.service';
 
 @Component({
-  templateUrl: 'app/blog-list/blog-list.component.html'
+    templateUrl: 'app/blog-archive/blog-archive.component.html'
 })
 
-export class BlogListComponent implements OnInit {
+export class BlogArchiveComponent implements OnInit {
   errorMessage: string;
   blogs: Blog[];
 
@@ -19,4 +18,5 @@ export class BlogListComponent implements OnInit {
       .subscribe(blogs => this.blogs = blogs,
       error => this.errorMessage = <any>error);
   }
+
 }

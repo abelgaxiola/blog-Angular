@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
+import { BlogArchiveComponent } from './blog-archive/blog-archive.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { BlogService } from './blog/blog.service';
 import { FooterComponent } from './footer/footer.component';
@@ -19,9 +20,10 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     HttpModule,
     RouterModule.forRoot([
+      { path: 'archive', component: BlogArchiveComponent },
       { path: 'blog', component: BlogComponent },
-      { path: 'blogs', component: BlogListComponent },
       { path: 'blog/:id', component: BlogDetailComponent },
+      { path: 'blogs', component: BlogListComponent },
       { path: '', redirectTo: 'blog', pathMatch: 'full' },
       { path: '**', redirectTo: 'blog', pathMatch: 'full' }
     ])
@@ -30,6 +32,7 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     BlogComponent,
     BlogListComponent,
+    BlogArchiveComponent,
     BlogDetailComponent,
     FooterComponent
   ],
