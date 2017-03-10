@@ -6,7 +6,7 @@
     "Post": "<p>A few weeks ago I was visiting with a family member that is studying to take the US Citizenship test and decided to help by creating a web application that can be used to study online.  Since the application is hosted on the Internet anyone can practice the questions and answers by going to the <a href='http://SouthToNorth.com' target='_blank'>SouthToNorth.com</a> website using a computer, a tablet, or a phone.</p><p>The U.S. Citizenship and Immigration Services provides us with 100 questions and answers that cover American Government, History, and Civics. The test is an oral test and the applicant will be asked 10 questions (taken from the 100 provided) from which at least 6 must be answered correctly in order to pass the test.</p><p> Maybe you know someone that is studying to take the test; if so, then send her/him the website link. I can tell you that I took the test and failed in more than one answer.  Go ahead and see how much you “really” know about U.S. history and government. </p><p>Enjoy,</p>",
     "Type": "Personal",
     "Date": "February 9 2015",
-    "ImageURL": "./images/coffee.jpg"
+    "ImageURL": "./images/1.png"
   },
   {
     "Id": 2,
@@ -15,7 +15,7 @@
     "Post": "<p>It’s a technological statement.  I’ve been wearing the MS Band for twelve days now and I’m impressed with how much technology is packed into this single health band: built-in GPS, UV monitor, optical heart rate sensor, 3-axis accelerometer, gyrometer, ambient light sensor, skin temperature sensor, capacitive sensor, galvanic skin response, microphone, haptic vibration motor, Bluetooth, touch-enabled TFT full-color display, etc., etc.; and, this my friends is only the hardware.  The software will blow your mind.</p><p>I use it every day to monitor my sleep, my heart rate, my exercise routines, the amount of calories I burn, my messages and my calendar reminders among many other things. The MS Band connects to my Lumia 925 Windows 8.1 phone via Bluetooth, and syncs with my Microsoft Health application providing me with plenty more information regarding my daily activities.  The phone app also manages my Band settings giving me options to customize the look, and allows me to add or delete notification tiles. And, oh yeah before I forget: the MS Band also syncs with Android and Apple phones.</p><p>There are plenty of reviews, pictures, and videos online that you can watch if you’re interested in finding out more.  Here is a link to a video that I like: Microsoft Band hands-on. If you want to read online reviews you will find that most of them will score the Band four-out-of-five stars. Here are a couple of reviewers that were not very impressed: <br/><br/>Microsoft Band: Killer on the inside, 'meh' on the outside<br/>Microsoft Band Review: Tracks Your Every Move, Then Breaks Your Heart</p><p>Is the MS Band perfect? No.  Can it be improved? Yes, and I’m sure that it will be. In my book it certainly deserves a five star rating.  Interested?  Find out more here: <a href='http://www.microsoft.com/microsoft-band/en-us' target='_blank'>microsoft-band</a> and here: <a href='http://www.microsoft.com/microsoft-band/en-us/get-started' target='_blank'>microsoft-band get-started</a>.</p><p>Time to monitor my sleep…</p>",
     "Type": "Hardware",
     "Date": "November 15 2014",
-    "ImageURL": "./images/road.jpg"
+    "ImageURL": "./images/2.png"
   },
   {
     "Id": 3,
@@ -24,7 +24,7 @@
     "Post": "<p>Been working with Web API for the entire week and decided to use angular as a test to see how hard/easy it would be to access the API from within an HTML page hosted on a different server.  Now, I’m new to AngularJS and also new to Web API so things do not come naturally to me.  Fortunately there is plenty of help online in the form of documentation, user groups, videos, etc.</p><p>At the end it turned out to be easier than expected, and like everything else I’ve done with AngularJS I was blown away by the simplicity.  The Angular code that did the trick was the following:</p><blockquote><p>(function () {<br>'use strict';<br>var app = angular.module('app', []);<br>var MainController = function($scope, $http) {<br>        $scope.message = 'Testing Web API with AngularJS';<br>        $scope.simpleTest = function () {<br>getResults('<a href='https://web.archive.org/web/20160316164820/http://website/api/results%22);'>http://website/api/results');</a><br>        };<br>var onSuccess = function (response) {<br>            $scope.results = response.data;<br>        };<br>var onError = function (reason) {<br>            $scope.error = 'Could not fetch the results';<br>        };<br>var getResults = function (url) {<br>            $http.get(url)<br>            .then(onSuccess, onError);<br>        }<br>    };<br>app.controller('MainController', ['$scope', '$http', MainController]);<br>})();</p></blockquote><p>Where I would call the getResults() function using a ng-click directive.  I wish I could take credit for the code but like everything else that I do when learning something new: I copied it from a sample in http://plnkr.co</p><p>Learning something new is always fun…</p>",
     "Type": "Software Development",
     "Date": "September 16 2014",
-    "ImageURL": "./images/coffee.jpg"
+    "ImageURL": "./images/3.png"
   },
   {
     "Id": 4,
@@ -33,7 +33,7 @@
     "Post": "<p>When I need work done that requires a handyman who do I call? I call Roberto Gaxiola <a href='http://handyman.gaxiola.info' target='_blank'>http://handyman.gaxiola.info</a>. If I need help with real estate – buying or selling – I get in contact with Samuel Gaxiola <a href='http://samuelgaxiola.com' target='_blank'>http://samuelgaxiola.com</a>. For legal issues I can’t think of a better person than Fernando X. Gaxiola <a href='http://tucsonlawoffice.com' target='_blank'>http://tucsonlawoffice.com</a>. Why? Because they’re family and they’re the best in town.</p><p>What do I do when one of them is not available? I ask for a recommendation from one of them or some other family member; because I believe in supporting my own – and you should too. The concept is not new and there are plenty of examples: churches, clubs, and ethnic groups. Some by mandate, others by tradition. Whatever the reason the result is the same: support your own.</p><p>With this short post I want to encourage all of you to do the same. If and when you need someone to work on your car or your home. Or, if you need to see a dentist, a doctor, or need financial advice, find out if there’s a member of your family that provides that service first.</p><p>I did a quick online search and created a small list of those family members that provide services or own businesses. Check them out here:</p><p><a href='http://gaxiola.info' target='_blank'>http://gaxiola.info</a> in the Negocios section</p><p>I’m sure that there are plenty of family owned businesses and services in your area. Call them first and recommend them when you have a chance.</p><p>Just a thought….</p>",
     "Type": "Personal",
     "Date": "October 7 2014",
-    "ImageURL": "./images/road.jpg"
+    "ImageURL": "./images/4.png"
   },
   {
     "Id": 5,
@@ -42,7 +42,7 @@
     "Post": "<p>Take a picture of a text document and with a few additional steps save it to OneDrive as a Word document. How cool is that? Microsoft just upgraded my free Office Lens Windows Phone App and it does exactly that plus more.</p><p>Recently I have been involved in a project of publishing a book that is currently in print form to the web. The process involved in creating the web page is: Scan the document, convert it to PDF format, open the document with a PDF reader, copy sections of text from the PDF document into a Word document, then proof the document, format, save as text, and copy the text to an HTML page. With Office Lens I no longer need the scanner, and I don’t have to copy and paste to Word; now I just take a picture and save it as a Word document. I still need to do the proofing, formatting, and HTML but the fact that I don’t need a scanner is worth plenty – at least to me.</p><p>Saving your pictures to Word document is only one of the features. Office Lens will also save your pictures as OneNote documents, and diagrams can be saved as PowerPoint files. I now have an OCR scanner in my pocket. If you don’t have Office Lens installed on your phone go ahead and get it now – it’s free – from this website: Office Lens App for Windows Phone</p><p>I haven’t tried the PowerPoint option but the OneNote and Word capabilities work surprisingly well. I give it five stars.</p><p>Enjoy,</p>",
     "Type": "Technical",
     "Date": "September 17 2014",
-    "ImageURL": "./images/road.jpg"
+    "ImageURL": "./images/5.png"
   },
   {
     "Id": 6,
@@ -51,7 +51,7 @@
     "Post": "<p>A long time ago – more than 30 years – I came across a small book written by a family member:  “Mi Tio Maclovio” by J. Felipe Gaxiola.  The book is a biography of Maclovio Gaxiola Lopez who was my grandfather’s brother and a great man that inspired many and whose legacy lives.</p><p>Reading the book gave me insight into my family’s past and made me feel proud of my family.  For this reason among many other I have been wanting to share the contents of this book with family and friends.  Fortunately for me I had the pleasure of meeting the book author some years ago at a family event where I asked him if I could share the book’s contents via the Internet; and he said yes.</p><p>A couple of days ago a printed version of the book was given to me (on loan) and I’m in the process of converting it into a web publication in HTML format.  Today I’m making the first part (about 10% of the book) available here:</p><p><a href='http://gaxiola.info/maclovio' target='_blank'>http://gaxiola.info/maclovio</a></p><p>The book is in Spanish but it can easily be converted to almost any language using the translation engine of Bing or Google.</p><p><a href='http://www.bing.com/translator/' target='_blank'>http://www.bing.com/translator/</a></p><p><a href='https://translate.google.com/' target='_blank'>https://translate.google.com/</a></p><p>I have endeavored to make the HTML markup as light as possible so that you can read it in your eReader tablet of choice and/or even on your cell phone.</p><p>Enjoy,</p>",
     "Type": "Personal",
     "Date": "August 10 2014",
-    "ImageURL": "./images/road.jpg"
+    "ImageURL": "./images/6.png"
   },
   {
     "Id": 7,
@@ -60,7 +60,7 @@
     "Post": "<p>Hace mucho tiempo – más de 30 años – me encontré un pequeño libro escrito por un miembro de la familia Gaxiola. El título del libro es “Mi Tío Maclovio” por J. Felipe Gaxiola.  Y es una biografía de Maclovio Gaxiola López, quien era hermano de mi abuelo y un gran hombre que inspiró a muchos y cuyo legado vive.</p><p>La lectura del libro me dio una visión del pasado de mi familia y me hizo sentir orgulloso de ella. Por esta razón, entre muchas otras, he querido compartir el contenido de este libro con familia y amigos. Afortunadamente para mí, tuve el placer de conocer al autor del libro hace algunos años en un evento familiar donde le pregunté si podía compartir el contenido del libro a través del Internet; y él me contesto que sí podía.</p><p>Hace un par de días un primo (nieto de Maclovio Gaxiola) me prestó una copia del libro y estoy en el proceso de convertirlo en una publicación web en formato de HTML. Hoy estoy compartiendo la primera parte (cerca del 10% del libro) aquí:</p><p><a href='http://gaxiola.info/maclovio' target='_blank'>http://gaxiola.info/maclovio</a></p><p>El libro está en español, pero se puede convertir fácilmente en casi cualquier idioma usando el motor de traducción de Bing o Google.</p><p><a href='http://www.bing.com/translator/' target='_blank'>http://www.bing.com/translator/</a></p><p><a href='https://translate.google.com/' target='_blank'>https://translate.google.com/</a></p><p>Me he esforzado para hacer el contenido lo más ligero posible para que se pueda leer en tableta e incluso se puede leer en teléfono moderno.</p><p>Espero les guste,</p>",
     "Type": "Personal Spanish",
     "Date": "August 10 2014",
-    "ImageURL": "./images/road.jpg"
+    "ImageURL": "./images/6.png"
   },
   {
     "Id": 8,
