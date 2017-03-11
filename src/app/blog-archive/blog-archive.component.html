@@ -1,7 +1,7 @@
 <div class="blog mdl-layout mdl-js-layout has-drawer is-upgraded">
   <main class="mdl-layout__content">
     <div class="blog__posts mdl-grid">
-      <div class="mdl-card mdl-cell mdl-cell--6-col" *ngFor='let blog of blogs' [routerLink]="['/blog', blog.Id]">
+      <div class="mdl-card mdl-cell mdl-cell--6-col" *ngFor='let blog of blogs | slice:6' [routerLink]="['/blog', blog.Id]">
         <div>
           <div class="mdl-card__media mdl-color-text--grey-50" [style.height.px]="150">
             <h3>{{ blog.Title }}</h3>
